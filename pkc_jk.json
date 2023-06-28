@@ -1,0 +1,217 @@
+{
+    "说明": "此配置支持自定义填写监控变量，频道id需要加在diybotset.json配置文件的myzdjr_chatId中，变量就填这里。修改即生效，无需重启，注意备份！",
+
+    "/注释cmdName/": "cmdName: 执行命令，青龙默认task，一般不需要修改。",
+
+    "/注释isNow/": "isNow: 是否开启随机延时执行脚本，true=开启，false=关闭。",
+
+    "/注释isOpen/": "isOpen: 是否开启监控该变量，true=开启，false=关闭",
+  
+    "/注释name/": "name: 脚本名称备注或自定义名字，不重要。",
+  
+    "/注释envName/": "envName: 监控的变量名称，必要。如同一个脚本有多个变量只需要填其中一个即可",
+  
+    "/注释scriptPath/": "scriptPath: 变量应对的脚本路径，必要。相对路径默认执行/ql/scripts/下面脚本，可填绝对路径。",
+
+    "/注释log_send日志发送模式/": "1-bot发送；2-user发送；",
+
+    "/注释log_type显示形式/": "1-默认（1000字符内文本形式，大于1000字符log文件）；2-仅发送log文件",
+
+    "cmdName": "task",
+
+    "isNow": true,
+
+    "log_send": "1",
+
+    "log_type": "1",
+
+  "jk":[
+        {
+           "isOpen": true,
+           "name": "【云上】购物车锦鲤",
+           "envName": "jd_wxCartKoi_activityId",
+           "scriptPath": "shufflewzc_faker3_main/jd_wxCartKoi.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【云上】通用游戏任务",
+            "envName": "WXGAME_ACT_ID",
+            "scriptPath": "shufflewzc_faker3_main/jd_wxgame.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【云上】粉丝互动",
+            "envName": "jd_wxFansInterActionActivity_activityId",
+            "scriptPath": "shufflewzc_faker3_main/jd_wxFansInterActionActivity.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【云上】读秒拼手速",
+            "envName": "jd_wxSecond_activityId",
+            "scriptPath": "shufflewzc_faker3_main/jd_wxSecond.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【云上】分享有礼",
+            "envName":"jd_fxyl_activityId",
+            "scriptPath":"shufflewzc_faker3_main/jd_share.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【云上】CJ知识超人",
+            "envName":"jd_cjhy_wxKnowledgeActivity_activityId",
+            "scriptPath":"shufflewzc_faker3_main/jd_cjhy_wxKnowledgeActivity.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【抽奖】cjhy加购物车",
+            "envName":"jd_cjhy_wxCollectionActivityId",
+            "scriptPath":"shufflewzc_faker3_main/jd_cjhy_wxCollectionActivity.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【抽奖】lzkj加购物车",
+            "envName":"jd_lzkj_wxCollectionActivityId",
+            "scriptPath":"shufflewzc_faker3_main/jd_lzkj_wxCollectionActivity.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【抽奖】集卡抽奖通用",
+            "envName":"jd_wxCollectCard_activityId",
+            "scriptPath":"shufflewzc_faker3_main/jd_wxCollectCard.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【抽奖】joy抽奖机通用",
+            "envName":"JD_Lottery",
+            "scriptPath":"shufflewzc_faker3_main/jd_lotterys.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【抽奖】关注店铺抽奖",
+            "envName":"jd_wxShopFollowActivity_activityId",
+            "scriptPath":"shufflewzc_faker3_main/jd_wxShopFollowActivity.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【抽奖】盲盒抽京豆",
+            "envName":"jd_mhurlLis",
+            "scriptPath":"shufflewzc_faker3_main/jd_mhtask.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【开卡】入会开卡领取礼包",
+            "envName":"VENDER_ID",
+            "scriptPath":"shufflewzc_faker3_main/jd_card_force.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【开卡】微定制",
+            "envName":"jd_wdz_activityId",
+            "scriptPath":"shufflewzc_faker3_main/jd_wdz.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【签到】店铺签到",
+            "envName":"DPQDTK",
+            "scriptPath":"shufflewzc_faker3_main/jd_dpqd.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【Faker库】joy抽奖机通用",
+            "envName":"JD_Lottery",
+            "scriptPath":"shufflewzc_faker3_main/jd_lotterys.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【Faker库】入会开卡领取礼包通用",
+            "envName":"VENDER_ID",
+            "scriptPath":"shufflewzc_faker3_main/jd_card_force.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【小埋】关注有礼-自动解析通用",
+            "envName":"whx_drawShopGift",
+            "scriptPath":"shufflewzc_faker3_main/jd_whx_drawShopGift.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【小埋】邀请好友入会赢好礼",
+            "envName":"prodevactCode",
+            "scriptPath":"shufflewzc_faker3_main/jd_prodev.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【Faker】cjhy 七日签到",
+            "envName":"jd_cjhy_sevenDay_ids",
+            "scriptPath":"shufflewzc_faker3_main/jd_cjhy_sevenDay.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【Faker】cjhy签到有礼",
+            "envName":"cjhy_signActivity_ids",
+            "scriptPath":"shufflewzc_faker3_main/jd_cjhy_signActivity.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【Faker】lzkj签到有礼",
+            "envName":"jd_lzkj_signActivity2_ids",
+            "scriptPath":"shufflewzc_faker3_main/jd_lzkj_signActivity2.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【Faker】cjhy每日抢",
+            "envName":"jd_cjhy_daily_ids",
+            "scriptPath":"shufflewzc_faker3_main/jd_cjhy_daily.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【Faker】lzkj每日抢",
+            "envName":"jd_lzkj_daily_ids",
+            "scriptPath":"shufflewzc_faker3_main/jd_lzkj_daily.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【Faker】cjhy游戏活动",
+            "envName":"jd_cjhy_wxGameActivity_activityId",
+            "scriptPath":"shufflewzc_faker3_main/jd_cjhy_wxGameActivity.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【Faker】cjhy关注店铺有礼",
+            "envName":"jd_cjhy_wxShopFollowActivity_activityId",
+            "scriptPath":"shufflewzc_faker3_main/jd_cjhy_wxShopFollowActivity.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【Faker】lzkj关注店铺有礼",
+            "envName":"jd_lzkj_wxShopFollowActivity_activityId",
+            "scriptPath":"shufflewzc_faker3_main/jd_lzkj_wxShopFollowActivity.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【Faker】cjhy店铺礼包",
+            "envName":"jd_cjhy_wxShopGift_ids",
+            "scriptPath":"shufflewzc_faker3_main/jd_cjhy_wxShopGift.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【Faker】lzkj店铺礼包",
+            "envName":"jd_lzkj_wxShopGift_ids",
+            "scriptPath":"shufflewzc_faker3_main/jd_lzkj_wxShopGift.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【Faker】店铺抽奖通用活动",
+            "envName":"LUCK_DRAW_URL",
+            "scriptPath":"shufflewzc_faker3_main/jd_luck_draw.js"
+        },
+        {
+            "isOpen": true,
+            "name": "【Faker】收藏大师-抽奖通用",
+            "envName":"jd_txzj_lottery_id",
+            "scriptPath":"shufflewzc_faker3_main/jd_txzj_lottery.js"
+        }
+   ]
+    
+}
